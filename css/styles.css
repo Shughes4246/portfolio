@@ -288,6 +288,10 @@ nav ul.navbar li a:hover::after {
     padding: var(--gutter-spacing);
 }
 
+.hero  .intro .intro-img {
+    padding-top: 60px;
+}
+
 .hero  .intro .intro-img img {
     filter: drop-shadow(18px 14px 10px rgba(64, 32, 33 , 0.3));
     border-radius: 30% 70% 63% 37% / 30% 30% 70% 70% ;
@@ -346,6 +350,12 @@ h2 {
     max-width: 1200px;
     margin: 0 auto 35px;
     text-align: center;
+}
+
+@media screen and (min-width: 410px) {
+    .hero  .intro .intro-img {
+        padding-top: 0;
+    }
 }
 
 @media screen and (min-width: 40em) {
