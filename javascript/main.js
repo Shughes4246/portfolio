@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const heroBottom = hero.offsetTop + hero.offsetHeight;
 
     function stickyNavigation() {
-        console.log('scrollY = ' + window.scrollY);
-
         if (window.scrollY >= heroBottom) {
             header.classList.add('fixed-header');
         } else {
