@@ -259,7 +259,7 @@ nav ul.navbar li a:hover::after {
 
 .hero .bg img {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh + 30px);
 }
 
 .hero .bg-dark {
@@ -353,6 +353,10 @@ h2 {
 }
 
 @media screen and (min-width: 410px) {
+    .hero .bg img {
+        height: 100vh;
+    }
+
     .hero  .intro .intro-img {
         padding-top: 0;
     }
@@ -495,7 +499,7 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
-    max-width: 85%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -525,8 +529,6 @@ h2 {
 
 .portfolio .portfolio-wrapper .item .details {
     display: flex;
-    opacity: 0;
-    position: absolute;
     top: 0;
     left: 0;
     flex-direction: column;
@@ -599,7 +601,18 @@ h2 {
 .portfolio .portfolio-wrapper .item .details .links .link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
+
+@media screen and (min-width: 40em) {
+    .portfolio .portfolio-wrapper {
+        max-width: 85%;
+    }
+
+    .portfolio .portfolio-wrapper .item .details {
+        opacity: 0;
+        position: absolute;
+    }
+}
 
 /* Contact */
 .contact h2 {
@@ -789,6 +802,10 @@ footer .copyright p {
 
     .hero .bg-dark {
         display: block;
+    }
+
+    .hero  .intro .intro-img img {
+        filter: drop-shadow(18px 14px 10px rgba(0, 0, 0 , 0.3));
     }
 
     .hero .intro .intro-text .contact-btn a {
