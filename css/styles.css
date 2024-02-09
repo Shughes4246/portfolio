@@ -449,6 +449,10 @@ h2 {
     max-width: 180px;
 }
 
+.skills .skill.tailwindcss img {
+    max-width: 112px;
+}
+
 /* Portfolio */
 
 .portfolio h2 {
